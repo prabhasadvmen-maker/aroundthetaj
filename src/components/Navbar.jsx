@@ -36,9 +36,9 @@ const Navbar = () => {
         }`}
       >
         <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
-          <Link to="/" className="flex items-center">
-            {/* Logo placeholder - replace with actual logo later */}
-            <span className={`text-2xl font-bold tracking-tight ${scrolled ? 'text-primary' : 'text-white'}`}>
+          <Link to="/" className="flex items-center gap-3">
+            <img src="/Logo.png" alt="Around The Taj Logo" className="h-12 md:h-16 w-auto object-contain drop-shadow-md" />
+            <span className={`hidden md:block text-2xl font-bold tracking-tight ${scrolled ? 'text-primary' : 'text-white'}`}>
               Around The Taj
             </span>
           </Link>
@@ -99,7 +99,7 @@ const Navbar = () => {
             className="fixed inset-0 z-50 bg-white lg:hidden flex flex-col"
           >
             <div className="flex justify-between items-center p-4 border-b">
-              <span className="text-xl font-bold text-primary">Around The Taj</span>
+              <img src="/Logo.png" alt="Around The Taj Logo" className="h-10 w-auto object-contain" />
               <button onClick={() => setMobileMenuOpen(false)} className="text-gray-600">
                 <X size={28} />
               </button>
