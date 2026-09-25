@@ -38,9 +38,6 @@ const Navbar = () => {
         <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
           <Link to="/" className="flex items-center gap-3">
             <img src="/Logo.png" alt="Around The Taj Logo" className="h-12 md:h-16 w-auto object-contain drop-shadow-md" />
-            <span className={`hidden md:block text-2xl font-bold tracking-tight ${scrolled ? 'text-primary' : 'text-white'}`}>
-              Around The Taj
-            </span>
           </Link>
 
           {/* Desktop Nav */}

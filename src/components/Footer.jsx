@@ -10,8 +10,7 @@ const Footer = () => {
           {/* Column 1 */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <img src="/Logo.png" alt="Around The Taj Logo" className="h-12 w-auto object-contain brightness-0 invert opacity-90" />
-              <h2 className="text-2xl font-bold text-white">Around The Taj</h2>
+              <img src="/Logo.png" alt="Around The Taj Logo" className="h-16 w-auto object-contain brightness-0 invert opacity-90" />
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
               Your trusted travel partner in Agra. We provide premium car rentals, hotel bookings, and professional tour guides to make your journey unforgettable.
