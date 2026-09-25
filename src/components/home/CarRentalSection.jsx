@@ -13,7 +13,7 @@ const cars = [
 const CarRentalSection = () => {
   return (
     <section className="py-20 bg-white">
-      <div className="container mx-auto px-4 md:px-8">
+      <div className="container mx-auto px-6 md:px-8">
         <div className="flex justify-between items-end mb-12">
           <div>
             <p className="text-secondary-dark font-bold tracking-wider text-sm mb-2 uppercase">Car Rental Services</p>
@@ -35,7 +35,7 @@ const CarRentalSection = () => {
               className="bg-gray-50 rounded-2xl overflow-hidden border border-gray-100 hover:shadow-xl transition-all group"
             >
               <div className="h-48 overflow-hidden p-4">
-                <img src={car.img} alt={car.name} className="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform" />
+                <img src={car.img} alt={car.name} loading="lazy" className="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform" />
               </div>
               <div className="p-5">
                 <h3 className="font-bold text-xl text-gray-900 mb-2">{car.name}</h3>

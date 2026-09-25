@@ -12,6 +12,8 @@ const Hero = () => {
           loop 
           muted 
           playsInline 
+          preload="auto"
+          poster="https://images.unsplash.com/photo-1564507592208-02df21ead394?q=80&w=2000&auto=format&fit=crop"
           className="w-full h-full object-cover"
         >
           <source src="/Hero section vedio.mp4" type="video/mp4" />
@@ -21,45 +23,47 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 z-10 text-center text-white mt-16 drop-shadow-lg">
+      <div className="container mx-auto px-6 md:px-8 z-10 text-center text-white mt-16">
         <motion.div
-          initial={{ opacity: 0, y: -20 }}
+          initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="inline-block px-5 py-1.5 rounded-full border border-white/40 bg-black/20 backdrop-blur-md text-sm font-bold tracking-widest uppercase mb-6"
+          transition={{ duration: 0.5 }}
+          className="inline-block px-5 py-1.5 rounded-full border border-white/30 bg-black/40 text-xs md:text-sm font-bold tracking-widest uppercase mb-6"
         >
           WELCOME TO AROUND THE TAJ
         </motion.div>
         
         <motion.h1
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.2 }}
-          className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold mb-4 leading-tight text-white drop-shadow-2xl"
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-serif font-bold mb-4 leading-tight text-white"
+          style={{ textShadow: '0 2px 4px rgba(0,0,0,0.5)' }}
         >
           Explore Agra. <br />
-          <span className="text-secondary drop-shadow-2xl italic">Experience More.</span>
+          <span className="text-secondary italic">Experience More.</span>
         </motion.h1>
         
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 0.5 }}
-          className="text-xl md:text-3xl mb-12 max-w-3xl mx-auto font-light text-gray-100 drop-shadow-md tracking-wide"
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="text-lg md:text-3xl mb-12 max-w-3xl mx-auto font-light text-gray-100 tracking-wide"
+          style={{ textShadow: '0 1px 2px rgba(0,0,0,0.5)' }}
         >
           Cars • Hotels • Tour Guides • Travel Experiences
         </motion.p>
         
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-5"
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 sm:px-0"
         >
-          <Link to="/car-rental" className="w-full sm:w-auto px-8 py-3.5 rounded-full bg-secondary text-primary font-bold hover:bg-yellow-400 hover:scale-105 transition-all shadow-lg text-lg">
+          <Link to="/car-rental" className="w-full sm:w-auto px-8 py-4 rounded-full bg-secondary text-primary font-bold hover:bg-yellow-400 hover:scale-105 transition-transform shadow-lg text-lg">
             Book a Car
           </Link>
-          <Link to="/guide-services" className="w-full sm:w-auto px-8 py-3.5 rounded-full bg-white/10 backdrop-blur-sm border border-white text-white font-bold hover:bg-white hover:text-primary hover:scale-105 transition-all shadow-lg text-lg">
+          <Link to="/guide-services" className="w-full sm:w-auto px-8 py-4 rounded-full bg-black/40 border border-white/50 text-white font-bold hover:bg-white hover:text-primary hover:scale-105 transition-transform shadow-lg text-lg">
             Explore Tours
           </Link>
         </motion.div>

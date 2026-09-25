@@ -70,12 +70,12 @@ const HotelSection = () => {
           >
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
-                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=600&auto=format&fit=crop" alt="Hotel" className="rounded-2xl w-full h-48 object-cover shadow-lg" />
-                <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=600&auto=format&fit=crop" alt="Room" className="rounded-2xl w-full h-64 object-cover shadow-lg" />
+                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=600&auto=format&fit=crop" alt="Hotel" loading="lazy" className="rounded-2xl w-full h-48 object-cover shadow-lg" />
+                <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=600&auto=format&fit=crop" alt="Room" loading="lazy" className="rounded-2xl w-full h-64 object-cover shadow-lg" />
               </div>
               <div className="space-y-4 pt-12">
-                <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=600&auto=format&fit=crop" alt="Interior" className="rounded-2xl w-full h-64 object-cover shadow-lg" />
-                <img src="https://images.unsplash.com/photo-1542314831-c6a4d140b3c2?q=80&w=600&auto=format&fit=crop" alt="Pool" className="rounded-2xl w-full h-48 object-cover shadow-lg" />
+                <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=600&auto=format&fit=crop" alt="Interior" loading="lazy" className="rounded-2xl w-full h-64 object-cover shadow-lg" />
+                <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=600&auto=format&fit=crop" alt="Pool" loading="lazy" className="rounded-2xl w-full h-48 object-cover shadow-lg" />
               </div>
             </div>
           </motion.div>

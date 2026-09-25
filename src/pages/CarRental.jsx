@@ -47,7 +47,7 @@ const CarRental = () => {
               className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl transition-all group"
             >
               <div className="h-48 overflow-hidden">
-                <img src={car.img} alt={car.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                <img src={car.img} alt={car.name} loading="lazy" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
               </div>
               <div className="p-6">
                 <div className="text-xs font-bold text-secondary-dark uppercase tracking-wider mb-2">{car.type}</div>

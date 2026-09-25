@@ -15,8 +15,8 @@ const GuideBookingForm = () => {
 
   return (
     <section className="py-20 bg-white">
-      <div className="container mx-auto px-4 md:px-8">
-        <div className="bg-gray-50 rounded-[3rem] p-8 md:p-16 border border-gray-100 shadow-xl relative overflow-hidden">
+      <div className="container mx-auto px-6 md:px-8">
+        <div className="bg-gray-50 rounded-[2rem] md:rounded-[3rem] p-6 md:p-16 border border-gray-100 shadow-xl relative overflow-hidden">
           {/* Decorative Elements */}
           <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
           <div className="absolute bottom-0 left-0 w-80 h-80 bg-primary/5 rounded-full blur-3xl translate-y-1/3 -translate-x-1/4"></div>
